@@ -1,13 +1,13 @@
 import sys
 
 if len(sys.argv) != 3:
-a = int(sys.argv[1])
-b = int(sys.argv[2])
+num1= int(sys.argv[1])
+num2= int(sys.argv[2])
 
-print("Addition:", a + b)
-print("Subtraction:", a - b)
-print("Multiplication:", a * b)
-print("Division:", a / b)
+print("Addition:", num1+num2)
+print("Subtraction:", num1 - num2)
+print("Multiplication:", num2 * num2)
+print("Division:", num1 / num2)
 else:
 num1=2
 num2=4
