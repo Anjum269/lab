@@ -1,14 +1,12 @@
-import sys
-num1= int(sys.argv[1])
-op = sys.argv[2]
-num2 = int(sys.argv[3])
-
-if op == "+":
-    print(num1 + num2)
+ import sys
+if len(sys.argv)==4:
+    num1 = int(sys.argv[1])
+    num2 = int(sys.argv[2])
+    print("Addition of two numbers:", num1 + num2)
+    print("Subtraction of two numbers:", num1 - num2)
+    print("Multplication of two numbers:", num1 * num2)
+    print("Division of two numbers:",  num1 / num2)
 else:
-    print(
-        num1 - num2 if op == "-" else
-        num1* num2 if op == "*" else
-        num1 / num2 if op == "/" else
-        "Invalid operator"
-    )
+    num1 = 2
+    num2 = 4
+    print("Invalid try again")
