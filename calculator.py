@@ -1,6 +1,6 @@
 import sys
 
-if len(sys.argv) == 3:
+if len(sys.argv) == 2:
     num1 = int(sys.argv[1])
     num2 = int(sys.argv[2])
 
@@ -14,4 +14,4 @@ if len(sys.argv) == 3:
         print("Division not possible (division by zero)")
 else:
     print("Invalid input")
-    print("Usage: python calculator.py <num1> <num2>")
+ 
