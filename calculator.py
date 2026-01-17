@@ -1,15 +1,14 @@
- import sys
-
-a = int(sys.argv[1])
+import sys
+num1= int(sys.argv[1])
 op = sys.argv[2]
-b = int(sys.argv[3])
+num2 = int(sys.argv[3])
 
 if op == "+":
-    print(a + b)
+    print(num1 + num2)
 else:
     print(
-        a - b if op == "-" else
-        a * b if op == "*" else
-        a / b if op == "/" else
+        num1 - num2 if op == "-" else
+        num1* num2 if op == "*" else
+        num1 / num2 if op == "/" else
         "Invalid operator"
     )
