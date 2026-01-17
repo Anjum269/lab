@@ -1,12 +1,13 @@
-import sys
-if len(sys.argv)==4:
-    num1 = int(sys.argv[1])
-    num2 = int(sys.argv[2])
-    print("Addition of two numbers:", num1 + num2)
-    print("Subtraction of two numbers:", num1 - num2)
-    print("Multplication of two numbers:", num1 * num2)
-    print("Division of two numbers:",  num1 / num2)
-else:
-    num1 = 2
-    num2 = 4
-    print("Invalid try again")
+ mport sys
+
+if len(sys.argv) != 3:
+    print("Usage: python calculator.py num1 num2")
+    sys.exit(1)
+
+a = int(sys.argv[1])
+b = int(sys.argv[2])
+
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+print("Division:", a / b)
